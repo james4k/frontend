@@ -1,0 +1,18 @@
+---
+- hostname: name=james4k.com
+
+- name: install security packages
+  apt: pkg=denyhosts state=present
+
+- name: admin group
+  group: name=admin state=present system=yes
+
+- name: add users
+  user: name=james state=present shell=/bin/bash groups=admin
+
+- name: auth keys
+  authorized_key: user=james key="{{item}}"
+  with_file: james.id_rsa.pub
+
+- name: sudoers config
+  copy: src=sudoers dest=/etc/sudoers validate='visudo -cf %s'

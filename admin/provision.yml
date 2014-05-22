@@ -1,0 +1,9 @@
+---
+- hosts: all
+  user: james
+  sudo: True
+  roles:
+    - common
+    - frontend
+  tasks:
+    - include: deploy.yml

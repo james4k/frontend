@@ -1,0 +1,9 @@
+---
+- name: copy frontend binary
+  copy: src=../frontend dest=/home/james/frontend/bin/frontend mode=755
+
+- name: sync frontend content
+  synchronize: src=../content/ dest=/home/james/frontend/
+
+- name: restart frontend
+  supervisorctl: name=frontend state=restarted

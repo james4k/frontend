@@ -1,0 +1,10 @@
+.DS_Store
+.vagrant
+
+*.swp
+
+mend-versions.json
+
+style-*.css
+script-*.js
+

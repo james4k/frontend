@@ -1,0 +1,2 @@
+default ansible_ssh_user=james ansible_ssh_host=james4k.com ansible_ssh_port=22
+

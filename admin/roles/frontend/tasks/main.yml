@@ -1,0 +1,21 @@
+---
+- name: install ferm/iptables for port redirect
+  apt: pkg=ferm state=latest
+
+- name: config ferm
+  copy: src=ferm.conf dest=/etc/ferm/ferm.conf
+
+- name: restart ferm
+  service: name=ferm state=restarted
+
+- name: install supervisor
+  apt: pkg=supervisor state=latest
+
+- name: config supervisor
+  copy: src=supervisor.conf dest=/etc/supervisor/conf.d/frontend.conf
+
+- name: frontend directory
+  file: name=/home/james/frontend owner=james state=directory
+
+- name: frontend/bin directory
+  file: name=/home/james/frontend/bin owner=james state=directory

@@ -1,0 +1,15 @@
+{
+	"assets/script.js": {
+		"processors": "uglifyjs",
+		"files": [
+			"assets_src/sizzle.js",
+			"assets_src/app.js"
+		]
+	},
+	"assets/style.css": {
+		"files": [
+			"assets_src/style.css"
+		]
+	}
+}
+
