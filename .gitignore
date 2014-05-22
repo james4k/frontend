@@ -4,7 +4,8 @@
 *.swp
 
 mend-versions.json
-
 style-*.css
 script-*.js
+
+frontend
 
