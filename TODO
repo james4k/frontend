@@ -1,0 +1,20 @@
+Articles collection. Need to add frontmatter unmarshalling support to
+j4k.co/pages, basically. Perhaps provide generic collection support in
+the pages package?
+
+pages.Handler API is bad; need to rehink that. Needs to be more
+composable with other handlers and shiz. Think about how a caching
+handler would deal with it, and whatevers.
+
+New images for about page; too small with new page width and will look
+blurry, especially with high DPI. Should keep some high-res versions
+around *sigh*
+
+Index needs.. content. Point to about page, briefly summarize past work.
+Maybe just show recent tweets and soundcloud activity.. and of course,
+my recent articles/blog.
+
+Do we want to distinguish blog and articles? Yes, probably. Articles for
+all content designed to be long-lived, and will be organized more
+carefully for later discovery, blog for any ramblings or lower-quality
+content in general.

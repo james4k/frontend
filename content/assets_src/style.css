@@ -107,19 +107,16 @@ hr {
 
 #heading {
 	color: #000;
-	/*
-	font-family: 'PT Sans Narrow', sans-serif;
-	font-size: 160%;
-	line-height: 50%;
-	margin: 0.75em 0;
-	padding: 0;
-	display: block;
-	text-decoration: none;
-	*/
+	text-transform: lowercase;
 }
 
 #heading span {
 	color: #555;
+}
+
+#subheading {
+	color: #777;
+	font-size: 12pt;
 }
 
 .footer {
@@ -153,13 +150,26 @@ hr {
 	padding: 4px 20px;
 }
 
-.heading h2 {
+.heading h3 {
 	position: absolute;
 	bottom: 0;
 }
 
 p.role {
 	color: #959595;
+}
+
+.steamcharts {
+	background-image: url(/assets/nucleardawn.jpg);
+	background-color: #111;
+	background-size: cover;
+	color: #eee;
+	height: 160px;
+	position: relative;
+}
+
+.steamcharts h3 {
+	color: #fff;
 }
 
 .nuclear-dawn {
@@ -171,7 +181,7 @@ p.role {
 	position: relative;
 }
 
-.nuclear-dawn h2 {
+.nuclear-dawn h3 {
 	color: #fff;
 }
 

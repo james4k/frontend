@@ -22,12 +22,19 @@ func (h *notFoundHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 	h.Render(w, nil)
 }
 
-// this is all kind of dumb. j4k.co/pages is an old idea and just isn't
-// working. need to take a deep look at similar packages that could
-// replace it.
+type collection interface {
+	Len() int
+	Index(int) interface{}
+	Slice(int, int) collection
+}
+
+// this is all kind of dumb. j4k.co/pages is an old idea and is a bit
+// unwieldy. probably could be simplified. need to take a deep look at
+// similar packages that could replace it, or just use straight up
+// html/template.
 func assemble() http.Handler {
 	assetMap := map[string]string{}
-	pages.NewDefault("content/pages", "content/layouts")
+	pages.NewDefault("content", "content/layouts")
 	pages.Funcs(template.FuncMap{
 		"cdn": func(s string) string {
 			return "/" + s
@@ -61,7 +68,7 @@ func assemble() http.Handler {
 	root.Handle("/", pages.Static("index.html", map[string]interface{}{
 		"articles": articles.Collection(),
 	}))
-	root.Handle("/about", pages.Static("about.html", nil))
+	root.Handle("/works", pages.Static("works.html", nil))
 	//root.Handle("/games", pages.Static("games.html", nil))
 	//root.Handle("/software", pages.Static("software.html", nil))
 	assets := root.PathPrefix("/assets/")

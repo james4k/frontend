@@ -2,6 +2,7 @@
 layout: article
 title: Jump into Go's Source
 ---
+
 People ask all the time "How does this work in Go?" or "How is that
 implemented in Go?". If you have a similar question, maybe it is time
 you look at the source code. Understandably, this is not people's first

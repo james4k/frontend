@@ -49,23 +49,40 @@ func (h *articleHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 }
 
 func (h *articleHandler) read() error {
-	h.m = map[string]http.Handler{}
 	glob := filepath.Join(h.dir, "*.md")
 	matches, err := filepath.Glob(glob)
 	if err != nil {
 		return err
 	}
-	for _, file := range matches {
+	h.m = make(map[string]http.Handler, len(matches))
+	h.slice = make([]article, len(matches))
+	for i, file := range matches {
 		base := filepath.Base(file)
 		ext := filepath.Ext(base)
 		withoutExt := base[:len(base)-len(ext)]
-		rel, err := filepath.Rel("content/pages", file)
+		rel, err := filepath.Rel("content", file)
 		if err != nil {
 			return err
 		}
-		h.m[withoutExt] = pages.Static(rel, nil)
+		p := pages.Static(rel, &h.slice[i])
+		h.slice[i].Path = "/" + withoutExt
+		h.m[withoutExt] = p
 	}
 	return nil
+}
+
+type articles []article
+
+func (a articles) Len() int {
+	return len(a)
+}
+
+func (a articles) Index(i int) interface{} {
+	return a[i]
+}
+
+func (a articles) Slice(i, j int) collection {
+	return a[i:j]
 }
 
 func (h *articleHandler) Collection() interface{} {
