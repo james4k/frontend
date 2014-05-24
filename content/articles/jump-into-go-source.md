@@ -9,13 +9,13 @@ you look at the source code. Understandably, this is not people's first
 instinct. However, Go's source code is very approachable, in part due to
 the simplicity of the language.
 
-If you haven't already, installing Go from
-[source](http://golang.org/doc/install/source) is simple and tends to be
-the preferred installation method for many Go users. Or you can browse
-the source tree at <http://golang.org/src>.
+Installing Go from [source](http://golang.org/doc/install/source) is
+simple and tends to be the preferred installation method for many Go
+users, Or you can browse the source tree at <http://golang.org/src>.
 
-So, why not get started? Here is a selection of great literature on Go's internals, as well as a simplified and annotated tree of Go's
-source with an emphasis on the runtime:
+So, why not get started? Here is a selection of great literature on Go's
+internals, as well as a simplified and annotated tree of Go's source
+with an emphasis on the runtime:
 
 * [Design Documents](https://code.google.com/p/go-wiki/wiki/DesignDocuments)
 on go-wiki
