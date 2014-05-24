@@ -6,4 +6,4 @@
     - common
     - frontend
   tasks:
-    - include: deploy.yml
+    - include: tasks/deploy.yml

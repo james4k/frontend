@@ -7,5 +7,6 @@ mend-versions.json
 style-*.css
 script-*.js
 
+bin
 frontend
 
