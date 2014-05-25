@@ -11,7 +11,7 @@ the simplicity of the language.
 
 Installing Go from [source](http://golang.org/doc/install/source) is
 simple and tends to be the preferred installation method for many Go
-users, Or you can browse the source tree at <http://golang.org/src>.
+users. Or, you can browse the source tree at <http://golang.org/src>.
 
 So, why not get started? Here is a selection of great literature on Go's
 internals, as well as a simplified and annotated tree of Go's source
