@@ -144,19 +144,20 @@ hr {
 	color: #0080d5;
 }
 
-.heading {
+.works-heading {
 	margin-left: -20px;
 	margin-right: -20px;
 	padding: 4px 20px;
 }
 
-.heading h3 {
+.works-heading h3 {
 	position: absolute;
 	bottom: 0;
+	font-size: 1.4em;
 }
 
 p.role {
-	color: #959595;
+	color: #888;
 }
 
 .steamcharts {
