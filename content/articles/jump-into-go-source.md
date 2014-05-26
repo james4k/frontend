@@ -11,7 +11,9 @@ the simplicity of the language.
 
 Installing Go from [source](http://golang.org/doc/install/source) is
 simple and tends to be the preferred installation method for many Go
-users. Or, you can browse the source tree at <http://golang.org/src>.
+users. If using the official binary distribution, the source to the
+standard library is available at `$(go env GOROOT)/src/pkg`. Or, you can
+browse the source tree at <http://golang.org/src>.
 
 So, why not get started? Here is a selection of great literature on Go's
 internals, as well as a simplified and annotated tree of Go's source
@@ -46,7 +48,8 @@ Daniel Morsing
     └── ...rest of standard library
 </pre>
 
-For the Go tools, such as godoc, vet, and cover, you will have to visit
+For the Go tools, such as godoc, vet, and cover, you can simply find
+their sources in your `$GOPATH` after installing, or visit
 [go.tools](https://code.google.com/p/go.tools) on Google Code. If you
 want to keep up with development, the
 [golang-dev](http://groups.google.com/group/golang-dev) and
