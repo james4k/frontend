@@ -1,0 +1,14 @@
+{
+	"assets/script.js": {
+		"files": [
+			"assets/dependency.js",
+			"assets/app.js"
+		]
+	},
+	"assets/style.css": {
+		"files": [
+			"assets/base.css",
+			"assets/icons.css"
+		]
+	}
+}

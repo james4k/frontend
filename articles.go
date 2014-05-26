@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"path/filepath"
 
-	"j4k.co/pages"
+	"j4k.co/frontend/Godeps/_workspace/src/j4k.co/pages"
 )
 
 type article struct {

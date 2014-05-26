@@ -1,0 +1,57 @@
+{
+	"ImportPath": "j4k.co/frontend",
+	"GoVersion": "go1.2.1",
+	"Deps": [
+		{
+			"ImportPath": "code.google.com/p/go.exp/fsnotify",
+			"Comment": "null-73",
+			"Rev": "19114a3ee7d5473b597c550033e20841b35a4435"
+		},
+		{
+			"ImportPath": "github.com/google/go-github/github",
+			"Rev": "dcc1981fd936f5c4e35bea783d91aae3f2ca6e95"
+		},
+		{
+			"ImportPath": "github.com/google/go-querystring/query",
+			"Rev": "ec0a78e0f4db229b7897be36596a8944230b857a"
+		},
+		{
+			"ImportPath": "github.com/gorilla/context",
+			"Rev": "a08edd30ad9e104612741163dc087a613829a23c"
+		},
+		{
+			"ImportPath": "github.com/gorilla/mux",
+			"Rev": "9ede152210fa25c1377d33e867cb828c19316445"
+		},
+		{
+			"ImportPath": "github.com/russross/blackfriday",
+			"Comment": "v1.1-52-g5405274",
+			"Rev": "5405274d9994556c49bed724889558c8de335ffe"
+		},
+		{
+			"ImportPath": "j4k.co/fmatter",
+			"Rev": "51620a0df28ea35b4478d5b2dd4a35144b117114"
+		},
+		{
+			"ImportPath": "j4k.co/goimport",
+			"Rev": "e36ecd4b5ee896ce749cfb8266b6f03c76bbc01a"
+		},
+		{
+			"ImportPath": "j4k.co/layouts",
+			"Rev": "0d882a06ddaaeef68aeddcae20b4a4af4f59e956"
+		},
+		{
+			"ImportPath": "j4k.co/mender",
+			"Rev": "f847e99ed4643653186687e00b94a0b9f988db7c"
+		},
+		{
+			"ImportPath": "j4k.co/pages",
+			"Rev": "c1320bd1b2d5dcff0510bd6f2906b56afa625568"
+		},
+		{
+			"ImportPath": "launchpad.net/goyaml",
+			"Comment": "50",
+			"Rev": "gustavo@niemeyer.net-20131114120802-abe042syx64z2m7s"
+		}
+	]
+}

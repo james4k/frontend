@@ -6,11 +6,11 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/gorilla/mux"
-	"j4k.co/goimport"
-	"j4k.co/goimport/github"
-	"j4k.co/mender"
-	"j4k.co/pages"
+	"j4k.co/frontend/Godeps/_workspace/src/github.com/gorilla/mux"
+	"j4k.co/frontend/Godeps/_workspace/src/j4k.co/goimport"
+	"j4k.co/frontend/Godeps/_workspace/src/j4k.co/goimport/github"
+	"j4k.co/frontend/Godeps/_workspace/src/j4k.co/mender"
+	"j4k.co/frontend/Godeps/_workspace/src/j4k.co/pages"
 )
 
 type notFoundHandler struct {
