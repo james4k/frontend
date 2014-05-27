@@ -3,7 +3,7 @@
   copy: src=../bin/frontend dest=/home/james/frontend/bin/frontend mode=755
 
 - name: sync frontend content
-  synchronize: src=../content/ dest=/home/james/frontend/
+  synchronize: src=../content/ dest=/home/james/frontend/ delete=yes
 
 - name: restart frontend
   supervisorctl: name=frontend state=restarted
