@@ -2,7 +2,7 @@
 - hostname: name=james4k.com
 
 - name: install security packages
-  apt: pkg=denyhosts state=present
+  apt: pkg=denyhosts state=latest
 
 - name: admin group
   group: name=admin state=present system=yes
