@@ -7,7 +7,7 @@ import (
 	"net/http"
 	"sync"
 
-	"j4k.co/frontend/Godeps/_workspace/src/j4k.co/layouts"
+	"j4k.co/layouts"
 )
 
 // Handler that a Dynamic page implements by embedding pages.Template. NOT

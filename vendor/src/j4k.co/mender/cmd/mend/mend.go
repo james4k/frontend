@@ -6,7 +6,7 @@ import (
 	"log"
 	"os"
 
-	"j4k.co/frontend/Godeps/_workspace/src/j4k.co/mender"
+	"j4k.co/mender"
 )
 
 func main() {

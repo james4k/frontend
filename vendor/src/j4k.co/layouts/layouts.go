@@ -6,7 +6,7 @@ import (
 	"html/template"
 	"io"
 	"io/ioutil"
-	"j4k.co/frontend/Godeps/_workspace/src/j4k.co/fmatter"
+	"j4k.co/fmatter"
 	"path/filepath"
 	"sync"
 )

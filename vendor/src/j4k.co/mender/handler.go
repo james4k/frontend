@@ -10,7 +10,7 @@ import (
 	"sync"
 	"time"
 
-	"j4k.co/frontend/Godeps/_workspace/src/code.google.com/p/go.exp/fsnotify"
+	"code.google.com/p/go.exp/fsnotify"
 )
 
 type Handler struct {

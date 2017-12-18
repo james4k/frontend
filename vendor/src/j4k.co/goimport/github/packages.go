@@ -1,8 +1,8 @@
 package github
 
 import (
-	"j4k.co/frontend/Godeps/_workspace/src/github.com/google/go-github/github"
-	"j4k.co/frontend/Godeps/_workspace/src/j4k.co/goimport"
+	"github.com/google/go-github/github"
+	"j4k.co/goimport"
 	"log"
 	"path"
 	"regexp"

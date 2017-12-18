@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"html/template"
 	"io/ioutil"
-	"j4k.co/frontend/Godeps/_workspace/src/j4k.co/fmatter"
+	"j4k.co/fmatter"
 	"testing"
 )
 

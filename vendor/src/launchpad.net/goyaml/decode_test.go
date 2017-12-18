@@ -2,7 +2,7 @@ package goyaml_test
 
 import (
 	. "launchpad.net/gocheck"
-	"j4k.co/frontend/Godeps/_workspace/src/launchpad.net/goyaml"
+	"launchpad.net/goyaml"
 	"math"
 	"reflect"
 )

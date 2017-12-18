@@ -5,9 +5,8 @@ import (
 	"io"
 	"path/filepath"
 
-	"j4k.co/frontend/Godeps/_workspace/src/github.com/russross/blackfriday"
-
-	"j4k.co/frontend/Godeps/_workspace/src/j4k.co/fmatter"
+	"github.com/russross/blackfriday"
+	"j4k.co/fmatter"
 )
 
 type Template struct {

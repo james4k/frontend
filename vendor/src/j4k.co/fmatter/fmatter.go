@@ -6,7 +6,7 @@ import (
 	"bytes"
 	"io"
 	"io/ioutil"
-	"j4k.co/frontend/Godeps/_workspace/src/launchpad.net/goyaml"
+	"launchpad.net/goyaml"
 	"strings"
 	"unicode"
 )

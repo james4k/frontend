@@ -1,8 +1,8 @@
 package goimport_test
 
 import (
-	"j4k.co/frontend/Godeps/_workspace/src/j4k.co/goimport"
-	"j4k.co/frontend/Godeps/_workspace/src/j4k.co/goimport/github"
+	"j4k.co/goimport"
+	"j4k.co/goimport/github"
 	"net/http"
 )
 
