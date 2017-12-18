@@ -2,7 +2,7 @@
 set -e
 
 mkdir -p bin
-GOOS=linux GOARCH=amd64 go build -o ./bin/frontend -tags prod .
+GOOS=linux GOARCH=amd64 gb build -o cmd/frontend -tags prod .
 ls -t content/assets/script-*.js | awk 'NR>2' | xargs -L 1 rm
 ls -t content/assets/style-*.css | awk 'NR>2' | xargs -L 1 rm
 mend -f content/mend.json -o content/mend-versions.json content
