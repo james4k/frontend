@@ -1,9 +1,15 @@
 ---
 - name: copy frontend binary
-  copy: src=../bin/frontend dest=/home/james/frontend/bin/frontend mode=755
+  copy: src=../bin/frontend-linux-amd64-prod dest=/home/james/frontend/bin/frontend mode=755
 
 - name: sync frontend content
-  synchronize: src=../content/ dest=/home/james/frontend/ delete=yes
+  synchronize:
+    src: ../content
+    dest: /home/james/frontend
+    delete: yes
+    rsync_opts:
+      - "--exclude=bin/"
+  become: false
 
 - name: restart frontend
   supervisorctl: name=frontend state=restarted

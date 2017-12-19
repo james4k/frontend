@@ -6,10 +6,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	{{with (page.desc)}}<meta name="description" content="{{.}}">{{end}}
 	{{if page.noindex}}<meta name="robots" value="noindex, follow">{{end}}
-	
+	<!--
 	<link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow|PT+Serif:400,700' rel='stylesheet' type='text/css'>
 	<link href="{{asset "assets/style.css" | cdn}}" rel="stylesheet">
 	<script src="{{asset "assets/script.js" | cdn}}"></script>
+	-->
+	<link href="{{asset "assets/tufte.css" | cdn}}" rel="stylesheet">
 </head>
 
 <body>
@@ -19,7 +21,7 @@
 </div>
 
 <script>
-initParallax();
+//initParallax();
 
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

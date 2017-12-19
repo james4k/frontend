@@ -68,10 +68,10 @@ func assemble() http.Handler {
 	root.Handle("/", pages.Static("index.html", map[string]interface{}{
 		"articles": articles.Collection(),
 	}))
-	root.Handle("/works", pages.Static("works.html", nil))
 	//root.Handle("/games", pages.Static("games.html", nil))
 	//root.Handle("/software", pages.Static("software.html", nil))
 	assets := root.PathPrefix("/assets/")
+	root.PathPrefix("/files/").Handler(http.FileServer(http.Dir("")))
 	root.Handle("/{any}", articles)
 	root.NotFoundHandler = notfound
 

@@ -29,8 +29,8 @@ func main() {
 	server := &http.Server{
 		Addr:         ":8000",
 		Handler:      nil,
-		ReadTimeout:  10 * time.Second,
-		WriteTimeout: 3 * time.Second,
+		ReadTimeout:  30 * time.Second,
+		WriteTimeout: 120 * time.Second,
 	}
 	http.Handle("/", assemble())
 	log.Fatal(server.ListenAndServe())
